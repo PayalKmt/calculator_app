@@ -47,7 +47,7 @@ jobs:
       - name: Decode Keystore
         run: |
           ls -l android/app
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/upload-keystore.jks
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode --ignore-garbage > android/app/upload-keystore.jks
 
       - name: Create key.properties
         run: |
