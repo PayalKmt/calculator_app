@@ -57,6 +57,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
             padding: const EdgeInsets.all(24),
           ),
+          
           onPressed: () => buttonPressed(text),
           child: Text(
             text,
